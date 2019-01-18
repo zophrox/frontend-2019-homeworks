@@ -1,37 +1,22 @@
-var dog = { kind:"animal",
-            who:"dog",
-            legs:"4",
-            hands:"0",
-            name:"Rex",
-            gender:"male",
-            say:"woof-woof!",
-            friend:"Mary, Jon"};
+var Being = function(kind, who, legs, hands, name, gender, say, friend ){
+            this.kind = kind;
+            this.who = who;
+            this.legs = legs;
+            this.hands = hands;
+            this.name = name;
+            this.gender = gender;
+            this.say = say;
+            this.friend = friend;
+            
+};
 
-var cat = { kind:"animal",
-            who:"cat",
-            legs:"4",
-            hands:"0",
-            name:"Lisa",
-            gender:"female",
-            say:"meow!"};
+var dog = new Being('animal', 'dog', '4', '0', 'Rex', 'male', 'woof-woof!', 'Mary, Jon'); 
 
-var woman = { kind:"human",
-              who:"woman",
-              legs:"2",
-              hands:"2",
-              name:"Mary",
-              gender:"female",
-              say:"Hello Jon!",
-              friend:"Mary, Rex"};
+var cat = new Being('animal', 'cat', '4', '0', 'Lisa', 'female', 'meow!'); 
 
-var man = { kind:"human",
-            who:"man",
-            legs:"2",
-            hands:"2",
-            name:"Jon",
-            gender:"male",
-            say:"Hello Mary!",
-            friend:"Jon, Rex"};
+var woman = new Being('human', 'woman', '2', '2', 'Mary', 'female', 'Hello Jon!', 'Jon, Rex');
+           
+var man = new Being('human', 'man', '2', '2', 'Jon', 'female', 'Hello Mary!', 'Mary, Rex');
 
 var  inhabitantes = [dog, cat, woman, man];
 
